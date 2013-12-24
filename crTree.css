@@ -1,0 +1,112 @@
+
+/******************************************************/
+/*************		MAIN 			*******************/
+/******************************************************/
+
+.crTree {
+    overflow: auto;
+}
+
+    .crTree ul {
+        list-style: none outside none;
+        padding-left: 20px;
+    }
+
+        .crTree ul > li {
+            cursor: pointer;
+        }
+
+            .crTree ul > li > section > * {
+                vertical-align: middle;
+            }
+
+            .crTree ul > li > section {
+                background-color: rgba(0, 0, 0, 0);
+                height: 20px;
+                margin-bottom: 2px;
+                margin-top: 2px;
+                padding-top: 2px;
+            }
+
+                .crTree ul > li > section:hover {
+                    background-color: rgba(0, 0, 0, 0.15);
+                }
+
+    .crTree .expander-container {
+        background-color: transparent;
+        display: inline-block;
+        height: 16px;
+        margin-right: 5px;
+        width: 16px;
+    }
+
+.crTree-hidden {
+    display: none;
+}
+
+.crTree-i-container {
+    background-color: transparent;
+    display: inline-block;
+    margin: 3px;
+}
+
+    .crTree-i-container.after {
+        margin-left: 3px;
+    }
+
+    .crTree-i-container.before {
+    }
+
+.crTree .cr-selected-node {
+    background-color: cyan;
+}
+
+/******************************************************/
+/*************		END MAIN		*******************/
+/******************************************************/
+
+/******************************************************/
+/*************		ICONS 			*******************/
+/******************************************************/
+
+.crTree [class^="cr-icon-"], .crTree [class*=" cr-icon-"] {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-image: url("resources/icons.gif");
+}
+
+.cr-icon-expander {
+    background-position: 0px -80px;
+}
+
+    .cr-icon-expander:hover {
+        background-position: -16px -80px;
+    }
+
+.cr-icon-expanded {
+    background-position: -32px -80px;
+}
+
+    .cr-icon-expanded:hover {
+        background-position: -48px -80px;
+    }
+
+.cr-icon-folder {
+    background-position: 0px -16px;
+}
+
+.cr-icon-leaf {
+    background-position: 0px -0px;
+}
+
+.cr-icon-busy {
+    background-image: url("resources/loading.gif") !important;
+}
+
+/******************************************************/
+/*************	END ICONS 			*******************/
+/******************************************************/
